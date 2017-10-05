@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Sphere?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.collections.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import test.GradeTable?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.ToggleButton?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="test.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <VBox prefHeight="373.0" prefWidth="569.0">
+            <children>
+                <MenuBar>
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Log Out" onAction="#logout" fx:id="logout"/>
+                                <MenuItem mnemonicParsing="false" text="Close" onAction="#close"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About"/>
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <TabPane prefHeight="314.0" prefWidth="569.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                        <Tab text="Recent Assignments">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <TableView layoutX="11.0" layoutY="8.0" prefHeight="269.0" prefWidth="547.0" fx:id="tableView">
+                                            <columns>
+                                                <TableColumn prefWidth="86" text="Time" sortable="false">
+                                                    <cellValueFactory><PropertyValueFactory property="time" />
+                                                    </cellValueFactory>
+                                                </TableColumn>
+                                                <TableColumn prefWidth="187" text="Course" sortable="false">
+                                                    <cellValueFactory><PropertyValueFactory property="course" />
+                                                    </cellValueFactory>
+                                                </TableColumn>
+                                                <TableColumn prefWidth="183" text="Assignment" sortable="false">
+                                                    <cellValueFactory><PropertyValueFactory property="assignment" />
+                                                    </cellValueFactory>
+                                                </TableColumn>
+                                                <TableColumn prefWidth="70" text="Grade" sortable="false">
+                                                    <cellValueFactory><PropertyValueFactory property="grade" />
+                                                    </cellValueFactory>
+                                                </TableColumn>
+                                            </columns>
+                                        </TableView>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="All Grades">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+                <ButtonBar prefHeight="45.0" prefWidth="452.0">
+                    <buttons>
+                        <Button minWidth="24.0" mnemonicParsing="false" prefHeight="29.0" text="Refresh" onAction="#refresh" fx:id="refresh"/>
+                        <ToggleButton minWidth="24.0" mnemonicParsing="false" prefHeight="29.0" text="Automatic Refresh" onAction="#autorefresh" fx:id="refresherauto"/>
+                        <Sphere radius="0.77" />
+                    </buttons>
+                </ButtonBar>
+            </children>
+        </VBox>
+    </children>
+</GridPane>

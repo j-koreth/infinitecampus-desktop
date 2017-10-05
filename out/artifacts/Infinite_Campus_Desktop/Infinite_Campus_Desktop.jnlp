@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Infinite_Campus_Desktop.jnlp">
+  <information>
+    <title>Infinite Campus Desktop</title>
+    <vendor>HexaneTech</vendor>
+    <description>Infinite Campus Desktop</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Infinite_Campus_Desktop.jar" size="30365" download="eager" />
+    <jar href="commons-codec-1.10.jar" size="284184" download="eager" />
+    <jar href="commons-collections-3.2.1.jar" size="575389" download="eager" />
+    <jar href="commons-io-2.4.jar" size="185140" download="eager" />
+    <jar href="commons-lang3-3.4.jar" size="434678" download="eager" />
+    <jar href="commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="cssparser-0.9.18.jar" size="372937" download="eager" />
+    <jar href="htmlunit-2.19.jar" size="1906761" download="eager" />
+    <jar href="htmlunit-core-js-2.17.jar" size="1086732" download="eager" />
+    <jar href="httpclient-4.5.1.jar" size="732765" download="eager" />
+    <jar href="httpcore-4.4.3.jar" size="326594" download="eager" />
+    <jar href="httpmime-4.5.1.jar" size="40698" download="eager" />
+    <jar href="jetty-io-9.2.13.v20150730.jar" size="108315" download="eager" />
+    <jar href="jetty-util-9.2.13.v20150730.jar" size="358143" download="eager" />
+    <jar href="nekohtml-1.9.22.jar" size="125315" download="eager" />
+    <jar href="sac-1.3.jar" size="15808" download="eager" />
+    <jar href="serializer-2.7.2.jar" size="276420" download="eager" />
+    <jar href="websocket-api-9.2.13.v20150730.jar" size="43773" download="eager" />
+    <jar href="websocket-client-9.2.13.v20150730.jar" size="36261" download="eager" />
+    <jar href="websocket-common-9.2.13.v20150730.jar" size="179844" download="eager" />
+    <jar href="xalan-2.7.2.jar" size="3154938" download="eager" />
+    <jar href="xercesImpl-2.11.0.jar" size="1367760" download="eager" />
+    <jar href="xml-apis-1.4.01.jar" size="220536" download="eager" />
+  </resources>
+<security>
+  <all-permissions/>
+</security>
+  <jfx:javafx-desc  width="600" height="400" main-class="Application.LoginGUI"  name="Infinite Campus Desktop" />
+  <update check="background"/>
+</jnlp>
